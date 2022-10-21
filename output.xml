@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221021 23:16:50.691" rpa="false" schemaversion="3">
+<suite id="s1" name="Der2" source="C:\development\robot-scripts\first-script\Tests\der2.robot">
+<test id="s1-t1" name="[documentation] Login Script" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.ryanair.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221021 23:16:50.882" level="INFO">Opening browser 'gc' to base url 'https://www.ryanair.com'.</msg>
+<status status="PASS" starttime="20221021 23:16:50.881" endtime="20221021 23:16:53.756"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221021 23:16:53.756" endtime="20221021 23:16:53.880"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@class="cookie-popup-with-overlay__button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:53.881" level="INFO">Clicking button 'xpath=//*[@class="cookie-popup-with-overlay__button"]'.</msg>
+<status status="PASS" starttime="20221021 23:16:53.881" endtime="20221021 23:16:53.995"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class='language-selector__button-chevron ng-star-inserted']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:53.996" level="INFO">Clicking element 'xpath=//*[@class='language-selector__button-chevron ng-star-inserted']'.</msg>
+<status status="PASS" starttime="20221021 23:16:53.996" endtime="20221021 23:16:54.110"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@href="/fi/en"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:54.111" level="INFO">Clicking element 'xpath=//*[@href="/fi/en"]'.</msg>
+<status status="PASS" starttime="20221021 23:16:54.111" endtime="20221021 23:16:54.958"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//label[contains(.,'One way')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:54.959" level="INFO">Clicking element 'xpath=//label[contains(.,'One way')]'.</msg>
+<status status="PASS" starttime="20221021 23:16:54.959" endtime="20221021 23:16:55.001"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221021 23:16:58.010" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221021 23:16:55.001" endtime="20221021 23:16:58.010"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath=//*[@placeholder="Departure"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221021 23:16:58.010" endtime="20221021 23:16:58.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@placeholder="Departure"]</arg>
+<arg>Brussels Charleroi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:58.072" level="INFO">Typing text 'Brussels Charleroi' into text field 'xpath=//*[@placeholder="Departure"]'.</msg>
+<status status="PASS" starttime="20221021 23:16:58.071" endtime="20221021 23:16:58.354"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='input-button__destination']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:58.355" level="INFO">Clicking element 'xpath=//input[@id='input-button__destination']'.</msg>
+<status status="PASS" starttime="20221021 23:16:58.355" endtime="20221021 23:16:58.539"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Poland')]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221021 23:16:58.539" endtime="20221021 23:16:58.811"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Poland')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:58.812" level="INFO">Clicking element 'xpath=//span[contains(.,'Poland')]'.</msg>
+<status status="PASS" starttime="20221021 23:16:58.812" endtime="20221021 23:16:58.889"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//span[@data-id='POZ']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221021 23:16:58.889" endtime="20221021 23:16:58.925"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@placeholder="Destination"]</arg>
+<arg>Poznan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:58.925" level="INFO">Typing text 'Poznan' into text field 'xpath=//*[@placeholder="Destination"]'.</msg>
+<status status="PASS" starttime="20221021 23:16:58.925" endtime="20221021 23:16:59.064"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@data-id='POZ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:59.065" level="INFO">Clicking element 'xpath=//span[@data-id='POZ']'.</msg>
+<status status="PASS" starttime="20221021 23:16:59.064" endtime="20221021 23:16:59.189"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//*[@class="datepicker__calendar datepicker__calendar--left"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221021 23:16:59.190" endtime="20221021 23:16:59.661"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@data-id='2022-11-29']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:59.661" level="INFO">Clicking element 'xpath=//*[@data-id='2022-11-29']'.</msg>
+<status status="PASS" starttime="20221021 23:16:59.661" endtime="20221021 23:16:59.764"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(.,'Done')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:59.765" level="INFO">Clicking button 'xpath=//button[contains(.,'Done')]'.</msg>
+<status status="PASS" starttime="20221021 23:16:59.764" endtime="20221021 23:16:59.833"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Search')]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221021 23:16:59.834" endtime="20221021 23:16:59.864"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Search')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:16:59.865" level="INFO">Clicking element 'xpath=//span[contains(.,'Search')]'.</msg>
+<status status="PASS" starttime="20221021 23:16:59.864" endtime="20221021 23:16:59.928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card/div/div/div[1]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221021 23:16:59.928" endtime="20221021 23:17:01.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card/div/div/div[1]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221021 23:17:01.899" level="INFO">Clicking element 'xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card/div/div/div[1]/div'.</msg>
+<status status="PASS" starttime="20221021 23:17:01.899" endtime="20221021 23:17:02.016"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221021 23:17:02.017" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight);
+Without any arguments.</msg>
+<status status="PASS" starttime="20221021 23:17:02.016" endtime="20221021 23:17:02.037"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/fare-selector-container/fare-selector/div/fare-table-container/fare-table/div[2]/ry-spinner/div[3]/div/div/fare-card/div</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221021 23:17:02.038" endtime="20221021 23:17:02.286"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/fare-selector-container/fare-selector/div/fare-table-container/fare-table/div[2]/ry-spinner/div[3]/div/div/fare-card/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221021 23:17:02.287" level="INFO">Clicking button 'xpath=/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/fare-selector-container/fare-selector/div/fare-table-container/fare-table/div[2]/ry-spinner/div[3]/div/div/fare-card/div/div/button'.</msg>
+<msg timestamp="20221021 23:17:02.648" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221021 23:17:02.649" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00661ED3+2236115]
+	Ordinal0 [0x005F92F1+1807089]
+	Ordinal0 [0x005065C0+812480]
+	Ordinal0 [0x00536586+1009030]
+	Ordinal0 [0x0052C416+967702]
+	Ordinal0 [0x00551A8C+1120908]
+	Ordinal0 [0x0052BD84+966020]
+	Ordinal0 [0x00551CA4+1121444]
+	Ordinal0 [0x005659E2+1202658]
+	Ordinal0 [0x005518A6+1120422]
+	Ordinal0 [0x0052A73D+960317]
+	Ordinal0 [0x0052B71F+964383]
+	GetHandleVerifier [0x0090E7E2+2743074]
+	GetHandleVerifier [0x009008D4+2685972]
+	GetHandleVerifier [0x006F2BAA+532202]
+	GetHandleVerifier [0x006F1990+527568]
+	Ordinal0 [0x0060080C+1837068]
+	Ordinal0 [0x00604CD8+1854680]
+	Ordinal0 [0x00604DC5+1854917]
+	Ordinal0 [0x0060ED64+1895780]
+	BaseThreadInitThunk [0x7661FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A57BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77A57B8E+238]
+</msg>
+<status status="FAIL" starttime="20221021 23:17:02.287" endtime="20221021 23:17:02.651"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221021 23:17:02.651" endtime="20221021 23:17:02.652"/>
+</kw>
+<status status="FAIL" starttime="20221021 23:16:50.881" endtime="20221021 23:17:02.652">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00661ED3+2236115]
+	Ordinal0 [0x005F92F1+1807089]
+	Ordinal0 [0x005065C0+812480]
+	Ordinal0 [0x00536586+1009030]
+	Ordinal0 [0x0052C416+967702]
+	Ordinal0 [0x00551A8C+1120908]
+	Ordinal0 [0x0052BD84+966020]
+	Ordinal0 [0x00551CA4+1121444]
+	Ordinal0 [0x005659E2+1202658]
+	Ordinal0 [0x005518A6+1120422]
+	Ordinal0 [0x0052A73D+960317]
+	Ordinal0 [0x0052B71F+964383]
+	GetHandleVerifier [0x0090E7E2+2743074]
+	GetHandleVerifier [0x009008D4+2685972]
+	GetHandleVerifier [0x006F2BAA+532202]
+	GetHandleVerifier [0x006F1990+527568]
+	Ordinal0 [0x0060080C+1837068]
+	Ordinal0 [0x00604CD8+1854680]
+	Ordinal0 [0x00604DC5+1854917]
+	Ordinal0 [0x0060ED64+1895780]
+	BaseThreadInitThunk [0x7661FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A57BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77A57B8E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20221021 23:16:50.692" endtime="20221021 23:17:02.655"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Der2">Der2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
