@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221029 06:50:36.852" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon2" source="C:\development\robot-scripts\first-script\Tests\Amazon2.robot">
+<test id="s1-t1" name="User can search for products" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221029 06:50:37.053" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20221029 06:50:37.052" endtime="20221029 06:50:40.146"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221029 06:50:40.147" endtime="20221029 06:50:40.271"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:40.272" level="INFO">Clicking element 'xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input'.</msg>
+<status status="PASS" starttime="20221029 06:50:40.272" endtime="20221029 06:50:40.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:40.406" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20221029 06:50:40.405" endtime="20221029 06:50:40.554"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:40.554" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20221029 06:50:40.554" endtime="20221029 06:50:43.215"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221029 06:50:43.215" endtime="20221029 06:50:43.250"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221029 06:50:43.251" endtime="20221029 06:50:45.402"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20221029 06:50:37.052" endtime="20221029 06:50:45.404"/>
+</test>
+<test id="s1-t2" name="User can view a product" line="21">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221029 06:50:45.411" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20221029 06:50:45.410" endtime="20221029 06:50:49.169"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221029 06:50:49.170" endtime="20221029 06:50:49.300"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:49.301" level="INFO">Clicking element 'xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input'.</msg>
+<status status="PASS" starttime="20221029 06:50:49.301" endtime="20221029 06:50:49.434"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:49.435" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20221029 06:50:49.434" endtime="20221029 06:50:49.571"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:49.572" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20221029 06:50:49.571" endtime="20221029 06:50:51.786"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221029 06:50:51.787" endtime="20221029 06:50:51.828"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:51.828" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<msg timestamp="20221029 06:50:52.089" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221029 06:50:52.089" level="FAIL">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</msg>
+<status status="FAIL" starttime="20221029 06:50:51.828" endtime="20221029 06:50:52.092"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:52.092" endtime="20221029 06:50:52.093"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:52.093" endtime="20221029 06:50:52.093"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221029 06:50:45.408" endtime="20221029 06:50:52.094">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</status>
+</test>
+<test id="s1-t3" name="User can add product to cart" line="35">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221029 06:50:52.097" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20221029 06:50:52.097" endtime="20221029 06:50:55.406"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221029 06:50:55.407" endtime="20221029 06:50:55.558"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:55.559" level="INFO">Clicking element 'xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input'.</msg>
+<status status="PASS" starttime="20221029 06:50:55.559" endtime="20221029 06:50:55.700"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:55.701" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20221029 06:50:55.700" endtime="20221029 06:50:55.839"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:55.840" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20221029 06:50:55.840" endtime="20221029 06:50:58.033"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221029 06:50:58.033" endtime="20221029 06:50:58.056"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221029 06:50:58.057" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<msg timestamp="20221029 06:50:58.350" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221029 06:50:58.351" level="FAIL">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</msg>
+<status status="FAIL" starttime="20221029 06:50:58.057" endtime="20221029 06:50:58.351"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:58.352" endtime="20221029 06:50:58.352"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:58.352" endtime="20221029 06:50:58.352"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:58.353" endtime="20221029 06:50:58.353"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221029 06:50:58.353" endtime="20221029 06:50:58.353"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221029 06:50:52.096" endtime="20221029 06:50:58.354">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</status>
+</test>
+<test id="s1-t4" name="User must sign in to check out" line="51">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221029 06:50:58.357" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20221029 06:50:58.356" endtime="20221029 06:51:02.103"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221029 06:51:02.104" endtime="20221029 06:51:02.240"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221029 06:51:02.241" level="INFO">Clicking element 'xpath=//*[@id="nav-main"]/div[1]/div/div/div[3]/span[1]/span/input'.</msg>
+<status status="PASS" starttime="20221029 06:51:02.240" endtime="20221029 06:51:02.371"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221029 06:51:02.372" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20221029 06:51:02.371" endtime="20221029 06:51:02.569"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221029 06:51:02.570" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20221029 06:51:02.570" endtime="20221029 06:51:05.067"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221029 06:51:05.067" endtime="20221029 06:51:05.095"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221029 06:51:05.096" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<msg timestamp="20221029 06:51:05.380" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221029 06:51:05.380" level="FAIL">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</msg>
+<status status="FAIL" starttime="20221029 06:51:05.095" endtime="20221029 06:51:05.380"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.381" endtime="20221029 06:51:05.381"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.381" endtime="20221029 06:51:05.381"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.382" endtime="20221029 06:51:05.382"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@value="Proceed to checkout"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.382" endtime="20221029 06:51:05.382"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="a-box-inner a-padding-extra-large"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.382" endtime="20221029 06:51:05.383"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221029 06:51:05.383" endtime="20221029 06:51:05.383"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221029 06:50:58.355" endtime="20221029 06:51:05.383">Input with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img' not found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20221029 06:50:36.854" endtime="20221029 06:51:05.385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="3" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Amazon2">Amazon2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -10,13 +10,13 @@ ${BROWSER}  gc
 
 *** Test Cases ***
 
-User must sign in to check out
-begin web test
+    User must sign in to check out
+
 
 
 
 *** Keywords ***
 
-open browser http://www.amazon.com ${BROWSER}
+Open browser
 sleep 3s
 close browser
